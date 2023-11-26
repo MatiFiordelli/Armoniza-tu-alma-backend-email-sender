@@ -11,7 +11,6 @@ app.use(express.urlencoded(
 ))
 
 app.post('/', (req, res)=>{
-    //console.log(req.headers.origin)
     emailsender({
         firstname: req.body.firstName, 
         lastname: req.body.lastName,
